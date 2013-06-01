@@ -1,1 +1,0 @@
-This folder contains a JPA basic application with two different persistence unit defined.
