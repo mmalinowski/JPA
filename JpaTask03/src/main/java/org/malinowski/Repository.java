@@ -12,7 +12,7 @@ public class Repository {
 	private EntityManager em;
 	
 	public void create(String name) {
-		EntityA entity = new EntityA();
+		Employee entity = new Employee();
 		entity.setName(name);
 		em.persist(entity);
 		em.flush();
