@@ -18,8 +18,14 @@ public class RepositoryTest {
 	private Repository repository;
 	
 	@Test
-	public void repositoryCreateTest() {
-		repository.create("Test");
-		repository.create("Test2");
+	public void repositoryCreateEmployeeTest() {
+		repository.createEmployee("Test");
+		repository.createEmployee("Test2");
+	}
+	
+	@Test
+	public void repositoryEntityAutoIdTest() {
+		repository.createEntityAutoId("Test");
+		repository.createEntityAutoId("Test2");
 	}
 }

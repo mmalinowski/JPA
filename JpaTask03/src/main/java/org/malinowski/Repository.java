@@ -11,11 +11,17 @@ public class Repository {
 	@PersistenceContext(unitName="db1-unit")
 	private EntityManager em;
 	
-	public void create(String name) {
+	public void createEmployee(String name) {
 		Employee entity = new Employee();
 		entity.setName(name);
 		em.persist(entity);
-		em.flush();
+		System.out.println(entity.getId());
+	}
+	
+	public void createEntityAutoId(String name) {
+		EntityAutoID entity = new EntityAutoID();
+		entity.setName(name);
+		em.persist(entity);
 		System.out.println(entity.getId());
 	}
 }
