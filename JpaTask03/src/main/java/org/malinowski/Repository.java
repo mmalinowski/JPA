@@ -24,4 +24,18 @@ public class Repository {
 		em.persist(entity);
 		System.out.println(entity.getId());
 	}
+	
+	public void createEntityTableId1(String name) {
+		EntityTableID entity = new EntityTableID();
+		entity.setName(name);
+		em.persist(entity);
+		System.out.println(entity.getId());
+	}
+	
+	public void createEntityTableId2(String name) {
+		EntityTableID2 entity = new EntityTableID2();
+		entity.setName(name);
+		em.persist(entity);
+		System.out.println(entity.getId());
+	}
 }

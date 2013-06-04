@@ -28,4 +28,16 @@ public class RepositoryTest {
 		repository.createEntityAutoId("Test");
 		repository.createEntityAutoId("Test2");
 	}
+	
+	@Test
+	public void repositoryEntityTableId1() {
+		repository.createEntityTableId1("Test");
+		repository.createEntityTableId1("Test2");
+	}
+	
+	@Test
+	public void repositoryEntityTableId2() {
+		repository.createEntityTableId2("Test");
+		repository.createEntityTableId2("Test2");
+	}
 }
