@@ -38,4 +38,18 @@ public class Repository {
 		em.persist(entity);
 		System.out.println(entity.getId());
 	}
+	
+	public void createEntitySequence(String name) {
+		EntitySequenceID entity = new EntitySequenceID();
+		entity.setName(name);
+		em.persist(entity);
+		System.out.println(entity.getId());
+	}
+	
+	public void createEntityIdentity(String name) {
+		EntityIdentityID entity = new EntityIdentityID();
+		entity.setName(name);
+		em.persist(entity);
+		System.out.println(entity.getId());
+	}
 }

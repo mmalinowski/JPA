@@ -40,4 +40,16 @@ public class RepositoryTest {
 		repository.createEntityTableId2("Test");
 		repository.createEntityTableId2("Test2");
 	}
+	
+	@Test
+	public void repositoryEntitySequenceId() {
+		repository.createEntitySequence("Test");
+		repository.createEntitySequence("Test2");
+	}
+	
+	@Test
+	public void repositoryEntityIdentity() {
+		repository.createEntityIdentity("Test");
+		repository.createEntityIdentity("Test2");
+	}
 }
